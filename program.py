@@ -58,7 +58,7 @@ if __name__ == '__main__':
             if past < triggerPoint:
                 two = 1
             if one + two == 2:
-                file = "/home/archer/Downloads/room.mp3"
+                file = "room.mp3"
                 os.system("mpg123 " + file)
             time.sleep(0.01)
             one = 0
