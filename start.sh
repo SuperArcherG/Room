@@ -3,5 +3,5 @@
 
 cd /
 cd /home/archer/Room
-sudo python DistanceSensor.pi
+sudo python DistanceSensor.py
 cd /
