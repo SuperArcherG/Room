@@ -3,5 +3,5 @@
 
 cd /
 cd /home/archer/Room
-sudo python DistanceSensor.py
+sudo python program.py
 cd /
