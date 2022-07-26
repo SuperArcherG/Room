@@ -3,6 +3,20 @@ import RPi.GPIO as GPIO
 import time
 import os
 
+import sys
+import subprocess
+import pkg_resources
+
+required = {'mpg123'}
+installed = {pkg.key for pkg in pkg_resources.working_set}
+missing = required - installed
+
+if missing:
+    python = sys.executable
+    subprocess.check_call([python, '-m', 'pip', 'install', *missing], stdout=subprocess.DEVNULL)
+
+
+
 triggerPoint = 70.0
 past = 0.0
 dist = 0.0
